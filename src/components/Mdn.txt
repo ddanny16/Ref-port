@@ -1,9 +1,0 @@
-        <button onClick={handleLogout} className="logout-btn">Logout</button>
-
-        const Dashboard = () => {
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    navigate("/"); // Redirect to login page
-  };
